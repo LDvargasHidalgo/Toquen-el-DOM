@@ -1,0 +1,102 @@
+:root {
+    --blue: #04322E;
+    --red: #C93D1B;
+    --yellow: #F8C43A;
+    --cyan: #35D0BA;
+    --white: #D2FFF9;
+}
+
+/*-------------------Navbar--------------*/
+
+.nav {
+
+}
+
+/* navbar elements */
+
+.nav__item {
+
+}
+
+/* navbar modifier */
+
+.nav__item.active {
+
+}
+
+
+/*--------------main-------------*/
+.main {
+
+}
+
+/*main elements*/
+
+.main__home {
+
+}
+
+.main__logo {
+
+}
+
+.main__icon {
+
+}
+
+.main__para {
+
+}
+
+.main__button {
+
+}
+
+.main__title {
+
+}
+
+/*main modifiers*/
+
+.main__button.ghost {
+
+}
+
+/* ------------instrument----------- */
+
+.instrument {
+
+}
+
+/* instrument elements */
+
+.instrument__piano {
+
+}
+
+.instrument__drums {
+
+}
+
+/* instrument modifiers */
+
+.instrument__piano.active {
+
+}
+
+.instrument__drums.active {
+
+}
+
+
+/* -----------------menu-------------- */
+
+.menu {
+
+}
+
+/* menu elements*/
+
+.menu__icon {
+    
+}
