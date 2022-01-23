@@ -116,7 +116,7 @@ body {
 /* navbar modifier */
 
 .nav__item.active {
-
+    fill: var(--cyan)
 }
 
 
