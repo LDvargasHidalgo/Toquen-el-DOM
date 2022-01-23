@@ -26,48 +26,47 @@ body {
 .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto 71px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "main__logo"
         "main__icon"
         "main__para"
-        "main__buttons"
-        "nav";
-    height: 100vh;
+        "main__buttons";
+    height: 90vh;
     width: 90%;
 }
 
 /*main elements*/
 
-.main__home {}
+.main__home {
+
+}
 
 h1 {
     float: left;
     color: #F8C43A;
     position: relative;
     font-size: 4em;
-    letter-spacing: 15px;
-    text-align: center;
     font-family: var(--montserrat);
+    grid-area: main__logo;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Animación logo */
 h1 span {
     position: absolute;
-    right: 0;
+    right: 32px;
     width: 0;
     background: var(--blue);
     font-size: 64px;
-
-
-
-
-    animation: maquina 2s alternate steps(5);
+    animation: maquina 2s alternate steps(6);
 }
 
 @keyframes maquina {
     from {
         width: 100%;
-
     }
 
     to {
@@ -90,7 +89,7 @@ h1 span {
 }
 
 .main__img {
-    width: 50%;
+    width: 80%;
 }
 
 .main__para {
@@ -107,7 +106,8 @@ h1 span {
     grid-area: main__buttons;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
 
 
 }
@@ -115,11 +115,20 @@ h1 span {
 .main__button {
     text-decoration: none;
     border: 2px solid var(--yellow);
-    border-radius: 10%;
-    color: var(--yellow);
-    padding: 1rem;
-    margin: 1rem;
+    border-radius: 15px;
+    color: var(--red);
     font-family: var(--montserrat);
+    background: var(--yellow);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.main__button.ghost {
+    background: none;
+    color: var(--yellow);
 }
 
 .main__button:hover {
@@ -142,26 +151,26 @@ h1 span {
 .nav {
     background: var(--red);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 71px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav__items {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-area: nav;
-    max-height: 71px;
-    padding: 0 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
 }
-
-.nav>img {
-    width: 50px;
-
-}
-
-.nav>img:hover {
-    color: #35D0BA;
-}
-
 
 .nav__item.active {
     fill: var(--cyan)
 /* navbar elements */
+}
 
 .nav__item:hover {
     fill: var(--cyan);
