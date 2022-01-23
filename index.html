@@ -6,15 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/style/normalize.css">
+    <!-- source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <!--Monserrat  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Style css -->
     <link rel="stylesheet" href="./static/style/style.css">
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/89d0c94ca0.js" crossorigin="anonymous"></script>
     <title>Toquen el DOM</title>
 </head>
 
 <body>
     <main class="main">
-        <h1 class="main__logo">TED</h1>
+        <h1> TED <span>&#160;</span> </h1>
         <picture class="main__icon">
 
             <img src="./static/img/logo.svg" alt="" class="main__img">
@@ -25,9 +32,8 @@
             CSS y Javascript, puedes probar tu habilidad de tocar la batería, el piano y la marimba, o reproducir
             algunas canciones populares guardadas en nuestro repertorio.</p>
         <div class="main__buttons">
-
-            <button class="main__button ghost">ACERCA DE</button>
-            <button class="main__button">EMPEZAR</button>
+            <a class="main__button ghost">ACERCA DE</a>
+            <a class="main__button" href="./menu.html">EMPEZAR</a>
         </div>
         <nav class="nav">
             <img src="./static/img/home.svg" alt="">
