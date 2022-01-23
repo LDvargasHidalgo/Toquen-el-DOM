@@ -6,28 +6,33 @@
     --white: #D2FFF9;
 }
 
-/*-------------------Navbar--------------*/
-
-.nav {
-
+* {
+    outline: 2px solid red;
+    margin: 0;
+    padding: 0;
 }
 
-/* navbar elements */
-
-.nav__item {
-
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
 }
-
-/* navbar modifier */
-
-.nav__item.active {
-
-}
-
 
 /*--------------main-------------*/
 .main {
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto 71px;
+    grid-template-areas: "main__logo"
+                        "main__icon"
+                        "main__para"
+                        "main__buttons"
+                        "nav";
+    height: 100vh;
+    width: 90%;
 }
 
 /*main elements*/
@@ -37,14 +42,40 @@
 }
 
 .main__logo {
-
+    grid-area: main__logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__icon {
+    grid-area: main__icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.main__img {
+    width: 50%;
 }
 
 .main__para {
+    grid-area: main__para;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__buttons {
+    grid-area: main__buttons;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__button {
 
 }
 
@@ -61,6 +92,34 @@
 .main__button.ghost {
 
 }
+
+
+
+/*-------------------Navbar--------------*/
+
+.nav {
+    background: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    max-height: 71px;
+    padding: 0 1rem;
+}
+
+
+/* navbar elements */
+
+.nav__item {
+
+}
+
+/* navbar modifier */
+
+.nav__item.active {
+
+}
+
 
 /* ------------instrument----------- */
 
