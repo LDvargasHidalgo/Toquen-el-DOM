@@ -7,7 +7,6 @@
 }
 
 * {
-    outline: 2px solid red;
     margin: 0;
     padding: 0;
 }
@@ -155,5 +154,25 @@ body {
 }
 
 
+
+@media screen and (min-width: 1133px){
+    .main {
+        grid-template-columns: 71px 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "nav main__logo main__logo"
+                                "nav main__icon main__para";
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        max-height: 100vh;
+        padding: 1rem 0;
+    }
+
+    .main__buttons {
+        display: none;
+    }
+}
 
 
