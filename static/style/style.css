@@ -31,8 +31,9 @@ body {
         "main__icon"
         "main__para"
         "main__buttons";
-    height: 90vh;
+    height: 100vh;
     width: 90%;
+    padding-bottom: 5rem;
 }
 
 /*main elements*/
@@ -217,8 +218,10 @@ h1 span {
 
     .nav {
         flex-direction: column;
-        max-height: 100vh;
+        height: 100vh;
         padding: 1rem 0;
+        width: 71px;
+        left: 0;
     }
 
     .main__buttons {
