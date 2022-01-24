@@ -1,0 +1,65 @@
+:root {
+    --blue: #04322E;
+    --red: #C93D1B;
+    --yellow: #F8C43A;
+    --cyan: #35D0BA;
+    --white: #D2FFF9;
+    --source: 'Source Sans Pro', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    stroke-linecap: var(--red);
+    margin: 0 ;
+    padding: 0;
+    background: var(--blue);
+
+}
+
+.container {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "main"
+        "tittle"
+        "nav"
+        "nav";
+    }
+
+.main {
+
+    margin: 1rem;
+    color: var(--yellow);
+    font-family: var(--montserrat);
+    font-size: 1.5rem;
+}
+
+.tittle {
+
+    width: 90%;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--montserrat);
+    color: var(--red);
+
+}
+
+.nav {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+ 
+
+}
+
+.nav>svg {
+    border: 4px solid var(--yellow);
+    width: 7.5rem;
+    height: 9.3rem;
+    padding: 15px 10px;
+    border-radius: 15px 15px 15px 15px;
+}
