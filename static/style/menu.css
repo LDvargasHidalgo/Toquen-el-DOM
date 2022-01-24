@@ -9,6 +9,7 @@
         "tittle"
         "nav"
         "nav";
+
 }
 
 .container__main {
@@ -40,6 +41,7 @@
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 10px;
+    justify-items: center;
 }
 
 .menu>svg {
@@ -63,17 +65,17 @@
     .tittle {
         font-size: 3em;
     }
-}
 
-.menu {
-    display: grid;
-    width: 70%;
-    grid-gap: 0px;
 
-}
+    .menu {
+        display: grid;
+        width: 50%;
+        grid-gap: 0px;
+    }
 
-.menu>svg {
-    border: 8px solid var(--yellow);
-    width: 15em;
-    height: 9em;
+    .menu>svg {
+        border: 8px solid var(--yellow);
+        width: 15em;
+        height: 9em;
+    }
 }
