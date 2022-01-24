@@ -51,6 +51,7 @@ h1 {
     font-family: var(--montserrat);
     grid-area: main__logo;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +217,7 @@ h1 span {
         grid-template-areas: "main__logo main__logo"
                                 "main__icon main__para"
                                 "main__buttons main__buttons";
-        width: 100%;
+        width: 90%;
         height: 100vh;
 
     }
@@ -226,11 +227,13 @@ h1 span {
     }
 
     .main__icon {
+
     }
 
     .main__img {
-        width: 70%;
+        width: 80%;
         transform: rotate(-90deg);
+
     }
 
     .main__para {
@@ -243,14 +246,21 @@ h1 span {
     .main {
         grid-template-columns: 71px 1fr 1fr;
         grid-template-rows: auto auto auto;
-        grid-template-areas: ". main__logo main__logo"
+        grid-template-areas:    
+                                ". main__logo main__logo"
                                 ". main__icon main__para"
-                                ". main__buttons main__buttons";
-        width: 100%;
-        padding-bottom: 0;
+                                ". main__buttons main__buttons"
+                                ;
+        width: 90%;
     }
+
+    .main__icon {
+        max-height: 70vh;
+    }
+
     .main__img {
-        width: 50%;
+        width: 70%;
+        max-width: 600px;
         transform: rotate(-90deg);
     }
 
