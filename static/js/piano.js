@@ -1,5 +1,9 @@
 let keys = document.querySelectorAll(".key")
 
+const keyboardRel = {
+    
+}
+
 const loadSound = function (fuente) {
     const sound = document.createElement("audio");
     sound.src = fuente;
@@ -12,9 +16,13 @@ const loadSound = function (fuente) {
 
 keys.forEach(key => {
     let sound = loadSound(`./static/audio/${key.id}.ogg`)
-    key.addEventListener("click", ()=>{
+    key.addEventListener("mousedown", ()=>{
         sound.play()
         console.log(key.id)
+    })
+    key.addEventListener("mouseup", ()=>{
+        sound.pause()
+        sound.load()
     })
 }
 )
