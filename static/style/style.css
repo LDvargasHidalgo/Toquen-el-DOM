@@ -11,7 +11,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline:5px solid #C93D1B;
+    /*    outline:5px solid #C93D1B; */
 }
 
 body {
@@ -137,9 +137,7 @@ h1 span {
     color: var(--yellow);
 }
 
-.main__title {
-
-}
+.main__title {}
 
 /*main modifiers*/
 
@@ -170,7 +168,7 @@ h1 span {
 
 .nav__item.active {
     fill: var(--cyan)
-/* navbar elements */
+        /* navbar elements */
 }
 
 .nav__item:hover {
@@ -201,9 +199,7 @@ h1 span {
 
 /* -----------------menu-------------- */
 
-.menu {
-
-}
+.menu {}
 
 /* ---------------------Medias---------------------*/
 
@@ -212,20 +208,18 @@ h1 span {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: "main__logo main__logo"
-                                "main__icon main__para"
-                                "main__buttons main__buttons";
+            "main__icon main__para"
+            "main__buttons main__buttons";
         width: 90%;
         height: 100vh;
 
     }
-    
+
     h1 {
         font-size: 7rem;
     }
 
-    .main__icon {
-
-    }
+    .main__icon {}
 
     .main__img {
         width: 80%;
@@ -239,16 +233,17 @@ h1 span {
 }
 
 
-@media screen and (min-width: 1133px){
+@media screen and (min-width: 1133px) {
     .main {
         grid-template-columns: 71px 1fr 1fr;
         grid-template-rows: auto auto auto;
-        grid-template-areas:    
-                                ". main__logo main__logo"
-                                ". main__icon main__para"
-                                ". main__buttons main__buttons"
-                                ;
+        grid-template-areas:
+            ". main__logo main__logo"
+            ". main__icon main__para"
+            ". main__buttons main__buttons"
+        ;
         width: 90%;
+        padding-top: 5rem;
     }
 
     .main__icon {
@@ -267,7 +262,7 @@ h1 span {
         left: 0;
         width: 71px;
     }
-    
+
     .nav__items {
         display: flex;
         flex-direction: column;
