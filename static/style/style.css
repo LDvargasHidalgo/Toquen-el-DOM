@@ -20,6 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--blue);
+    position: relative;
 }
 
 /*--------------main-------------*/
@@ -90,7 +91,8 @@ h1 span {
 }
 
 .main__img {
-    width: 80%;
+    width: 70%;
+    max-width: 420px;
 }
 
 .main__para {
@@ -101,6 +103,7 @@ h1 span {
     text-align: center;
     color: var(--white);
     font-family: var(--source);
+    padding: 0rem 1rem;
 }
 
 .main__buttons {
@@ -127,19 +130,18 @@ h1 span {
     padding: 1rem 0rem;
 }
 
+.main__button:hover {
+    cursor: pointer;
+}
+
 .main__button.ghost {
     background: none;
     color: var(--yellow);
 }
 
-.main__button:hover {
-    background-color: var(--yellow);
-    color: var(--red);
+.main__title {
+
 }
-
-.main__button {}
-
-.main__title {}
 
 /*main modifiers*/
 
@@ -164,7 +166,7 @@ h1 span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 70%;
     padding: 0.5rem 1rem;
 }
 
@@ -205,28 +207,66 @@ h1 span {
 
 }
 
+/* ---------------------Medias---------------------*/
+
+@media screen and (min-width: 744px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "main__logo main__logo"
+                                "main__icon main__para"
+                                "main__buttons main__buttons";
+        width: 100%;
+        height: 100vh;
+
+    }
+    
+    h1 {
+        font-size: 7rem;
+    }
+
+    .main__icon {
+    }
+
+    .main__img {
+        width: 70%;
+        transform: rotate(-90deg);
+    }
+
+    .main__para {
+        font-size: 1.8rem;
+    }
+}
 
 
 @media screen and (min-width: 1133px){
     .main {
         grid-template-columns: 71px 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "nav main__logo main__logo"
-                                "nav main__icon main__para";
+        grid-template-rows: auto auto auto;
+        grid-template-areas: ". main__logo main__logo"
+                                ". main__icon main__para"
+                                ". main__buttons main__buttons";
         width: 100%;
+        padding-bottom: 0;
+    }
+    .main__img {
+        width: 50%;
+        transform: rotate(-90deg);
     }
 
     .nav {
-        flex-direction: column;
+        max-height: 100vh;
         height: 100vh;
-        padding: 1rem 0;
-        width: 71px;
         left: 0;
+        width: 71px;
     }
-
-    .main__buttons {
-        display: none;
+    
+    .nav__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 71px;
+        height: 80%;
     }
 }
-
-
