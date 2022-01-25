@@ -109,8 +109,6 @@ h1 span {
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-
-
 }
 
 .main__button {
@@ -135,14 +133,6 @@ h1 span {
     background: none;
     color: var(--yellow);
 }
-
-.main__title {}
-
-/*main modifiers*/
-
-.main__button.ghost {}
-
-
 
 /*-------------------Navbar--------------*/
 
@@ -174,100 +164,79 @@ h1 span {
     fill: var(--cyan);
 }
 
-/* navbar modifier */
-
-.nav__item.active {}
-
-
-/* ------------instrument----------- */
-
-.instrument {}
-
-/* instrument elements */
-
-.instrument__piano {}
-
-.instrument__drums {}
-
-/* instrument modifiers */
-
-.instrument__piano.active {}
-
-.instrument__drums.active {}
-
-
-/* -----------------menu-------------- */
-
-.menu {}
-
-/* ---------------------Medias---------------------*/
-
-@media screen and (min-width: 744px) {
-    .main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "main__logo main__logo"
-            "main__icon main__para"
-            "main__buttons main__buttons";
-        width: 90%;
-        height: 100vh;
-
-    }
-
-    h1 {
-        font-size: 7rem;
-    }
-
-    .main__icon {}
-
-    .main__img {
-        width: 80%;
-        transform: rotate(-90deg);
-
-    }
-
-    .main__para {
-        font-size: 1.8rem;
-    }
+/* --------------------Bateria---------------------------------- */
+.bateria {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+    /* ---------------------Medias---------------------*/
 
-@media screen and (min-width: 1133px) {
-    .main {
-        grid-template-columns: 71px 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            ". main__logo main__logo"
-            ". main__icon main__para"
-            ". main__buttons main__buttons"
-        ;
-        width: 90%;
-        padding-top: 5rem;
+    @media screen and (min-width: 744px) {
+        .main {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "main__logo main__logo"
+                "main__icon main__para"
+                "main__buttons main__buttons";
+            width: 90%;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 7rem;
+        }
+
+        .main__img {
+            width: 80%;
+            transform: rotate(-90deg);
+        }
+
+        .main__para {
+            font-size: 1.8rem;
+        }
     }
 
-    .main__icon {
-        max-height: 70vh;
-    }
 
-    .main__img {
-        width: 70%;
-        max-width: 600px;
-        transform: rotate(-90deg);
-    }
+    @media screen and (min-width: 1133px) {
+        .main {
+            grid-template-columns: 71px 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                ". main__logo main__logo"
+                ". main__icon main__para"
+                ". main__buttons main__buttons";
+            width: 90%;
+            padding-top: 5rem;
+        }
 
-    .nav {
-        max-height: 100vh;
-        height: 100vh;
-        left: 0;
-        width: 71px;
-    }
+        .main__icon {
+            max-height: 70vh;
+        }
 
-    .nav__items {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 71px;
-        height: 80%;
+        .main__img {
+            width: 70%;
+            max-width: 600px;
+            transform: rotate(-90deg);
+        }
+
+        .nav {
+            max-height: 100vh;
+            height: 100vh;
+            left: 0;
+            width: 71px;
+        }
+
+        .nav__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 71px;
+            height: 80%;
+        }
     }
-}

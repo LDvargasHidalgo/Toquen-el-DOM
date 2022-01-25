@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.container {
+    background-color: rgb(228, 207, 247);
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-areas: "main"
+        "subtittle"
+        "xilofono"
+        "nav";
+    grid-template-rows: 1fr 0.5fr 5fr 1fr;
+}
+
+.main {
+    background-color: rgb(255, 94, 0);
+    grid-area: main;
+    font-size: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 0.7em;
+}
+
+.subtittle {
+    background-color: greenyellow;
+    grid-area: subtittle;
+    text-align: center;
+    font-size: 2em;
+}
+
+.xilofono {
+    background-color: blue;
+    grid-area: xilofono;
+}
+
+.nav {
+    background-color: blueviolet;
+    grid-area: nav;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 1.25rem auto;
+    align-items: center;
+
+}
+
+.nav__items>svg {
+    display: flex;
+    padding: 0.5rem 1rem;    
+    border-radius: 15px;
+}

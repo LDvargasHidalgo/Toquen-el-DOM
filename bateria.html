@@ -8,83 +8,35 @@
     <link rel="stylesheet" href="./static/style/normalize.css">
 
     <link rel="stylesheet" href="./static/style/style.css">
-    <link rel="stylesheet" href="./static/style/pianoEs.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="./static/style/piano.css">
+    <title>Bateria</title>
 </head>
 
 <body>
-    <div class="container" id="contenedor">
-        <header class="container__main">
-            <h1 class="main__logo">TED</h1>
-        </header>
-            <h2 class="main__title">Piano/ Teclado</h2>
-
-
-        <div class="piano">
-            <div class="octave one">
-                <div class="key white" id="c3">Q</div>
-                <div class="key black c" id="c-3">2</div>
-                <div class="key white" id="d3">W</div>
-                <div class="key black d" id="d-3">3</div>
-                <div class="key white" id="e3">E</div>
-                <div class="key white" id="f3">R</div>
-                <div class="key black f" id="f-3">5</div>
-                <div class="key white" id="g3">T</div>
-                <div class="key black g" id="g-3">6</div>
-                <div class="key white" id="a3">Y</div>
-                <div class="key black a" id="a-3">7</div>
-                <div class="key white" id="b3">U</div>
-            </div>
-            <div class="octave two">
-                <div class="key white" id="c4">Z</div>
-                <div class="key black c" id="c-4">S</div>
-                <div class="key white" id="d4">X</div>
-                <div class="key black d" id="d-4">D</div>
-                <div class="key white" id="e4">C</div>
-                <div class="key white" id="f4">V</div>
-                <div class="key black f" id="f-4">G</div>
-                <div class="key white" id="g4">B</div>
-                <div class="key black g" id="g-4">H</div>
-                <div class="key white" id="a4">N</div>
-                <div class="key black a" id="a-4">J</div>
-                <div class="key white" id="b4">M</div>
-            </div>
-            <div class="octave three">
-                <div class="key white" id="c5"></div>
-                <div class="key black c" id="c-5"></div>
-                <div class="key white" id="d5"></div>
-                <div class="key black d" id="d-5"></div>
-                <div class="key white" id="e5"></div>
-                <div class="key white" id="f5"></div>
-                <div class="key black f" id="f-5"></div>
-                <div class="key white" id="g5"></div>
-                <div class="key black g" id="g-5"></div>
-                <div class="key white" id="a5"></div>
-                <div class="key black a" id="a-5"></div>
-                <div class="key white" id="b5"></div>
-            </div>
-        </div>
-        
-    </div>
+    <picture class="bateria">
+        <img src="./static/img/construction/60028.jpg" width="320px" height="auto" alt="">
+    </picture>
     <nav class="nav">
         <div class="nav__items">
-            
-            <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="nav__item active" d="M48.9631 23.1227L27.6529 1.92405L26.2244 0.502385C25.899 0.180599 25.4589 0 25.0001 0C24.5413 0 24.1012 0.180599 23.7757 0.502385L1.03706 23.1227C0.703573 23.4533 0.44001 23.8471 0.261931 24.2808C0.0838524 24.7144 -0.00513249 25.1792 0.000228598 25.6477C0.0222889 27.5798 1.63821 29.1222 3.57952 29.1222H5.92343V47H44.0768V29.1222H46.4703C47.4134 29.1222 48.3013 28.7544 48.9686 28.0903C49.2972 27.7643 49.5576 27.3767 49.7346 26.9498C49.9116 26.523 50.0018 26.0655 50 25.6037C50 24.6706 49.6305 23.7869 48.9631 23.1227ZM28.0885 43.0479H21.9117V31.8503H28.0885V43.0479ZM40.1059 25.1701V43.0479H31.6182V30.5329C31.6182 29.3198 30.631 28.3373 29.4122 28.3373H20.588C19.3692 28.3373 18.382 29.3198 18.382 30.5329V43.0479H9.89429V25.1701H4.59981L25.0056 4.87715L26.2796 6.14511L45.4059 25.1701H40.1059Z" fill="#04322E"/>
+            <a href="./index.html" target="_blank">
+                <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="nav__item"
+                        d="M48.9631 23.1227L27.6529 1.92405L26.2244 0.502385C25.899 0.180599 25.4589 0 25.0001 0C24.5413 0 24.1012 0.180599 23.7757 0.502385L1.03706 23.1227C0.703573 23.4533 0.44001 23.8471 0.261931 24.2808C0.0838524 24.7144 -0.00513249 25.1792 0.000228598 25.6477C0.0222889 27.5798 1.63821 29.1222 3.57952 29.1222H5.92343V47H44.0768V29.1222H46.4703C47.4134 29.1222 48.3013 28.7544 48.9686 28.0903C49.2972 27.7643 49.5576 27.3767 49.7346 26.9498C49.9116 26.523 50.0018 26.0655 50 25.6037C50 24.6706 49.6305 23.7869 48.9631 23.1227ZM28.0885 43.0479H21.9117V31.8503H28.0885V43.0479ZM40.1059 25.1701V43.0479H31.6182V30.5329C31.6182 29.3198 30.631 28.3373 29.4122 28.3373H20.588C19.3692 28.3373 18.382 29.3198 18.382 30.5329V43.0479H9.89429V25.1701H4.59981L25.0056 4.87715L26.2796 6.14511L45.4059 25.1701H40.1059Z"
+                        fill="#04322E" />
                 </svg>
-            </svg>
+            </a>
+            <a href="./piano.html">
             <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="nav__item"
+                <path class="nav__item "
                     d="M41.7778 0H5.22222C2.35 0 0 2.35 0 5.22222V41.7778C0 44.65 2.35 47 5.22222 47H41.7778C44.65 47 47 
                 44.65 47 41.7778V5.22222C47 2.35 44.65 0 41.7778 0ZM28.7222 30.0278H29.375V41.7778H17.625V30.0278H18.2778C19.7139 
                 30.0278 20.8889 28.8528 20.8889 27.4167V5.22222H26.1111V27.4167C26.1111 28.8528 27.2861 30.0278 28.7222 
                 30.0278ZM5.22222 5.22222H10.4444V27.4167C10.4444 28.8528 11.6194 30.0278 13.0556 30.0278H13.7083V41.7778H5.22222V5.22222ZM41.7778 
                 41.7778H33.2917V30.0278H33.9444C35.3806 30.0278 36.5556 28.8528 36.5556 27.4167V5.22222H41.7778V41.7778Z" fill="#04322E" />
             </svg>
-    
+        </a>
             <svg width="50" height="47" viewBox="0 0 93 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="nav__item" d="M89.7376 0L46.9238 20.3986C45.6363 19.5301 44.1211 19.0649 42.57 19.062C40.5172 19.062 
+                <path class="nav__item active" d="M89.7376 0L46.9238 20.3986C45.6363 19.5301 44.1211 19.0649 42.57 19.062C40.5172 19.062 
                     38.5485 19.8807 37.097 21.338C35.6455 22.7954 34.83 24.7719 34.83 26.8329C34.83 28.8939 35.6455 30.8704 
                     37.097 32.3277C38.5485 33.7851 40.5172 34.6038 42.57 34.6038C46.6335 34.6038 50.0082 31.4449 50.31 
                     27.439L73.7738 16.2684C80.7979 19.2446 85.14 23.1301 85.14 26.8329C85.14 34.1647 68.588 42.3747 46.44 
@@ -118,7 +70,6 @@
             </svg>
         </div>
     </nav>
-    <script src="./static/js/piano.js"></script>
 </body>
 
 </html>
