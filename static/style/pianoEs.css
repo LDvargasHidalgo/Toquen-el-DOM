@@ -1,66 +1,103 @@
-:root{
+:root {
+    --blue: #04322E;
     --red: #C93D1B;
+    --yellow: #F8C43A;
+    --cyan: #35D0BA;
+    --white: #D2FFF9;
+    --source: 'Source Sans Pro', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
 }
 
 body{
-    background: pink;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue)
 }
 
-#contenedor {
-    background-color: green;
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-}
 
 .piano {
-   
+   display: grid;
+   grid-template-columns: 1fr;
+
+   width: max-content;
+   gap: 3px;
+}
+
+.octave {
     display: flex;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    overflow: hidden;
     position: relative;
 }
 
-.piano__blanca{
-    height: 120px;
-    width: 40px;
-    border: 1.5px solid #000000;    
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: var(--montserrat);
 }
 
-.piano__blanca:hover{
+.key.white{
+    width: 3em;
+    height: 6em;
+    background: var(--white);
+    grid-area: white-key;
+    border-radius: 0 0 15px 15px;
+    outline: 3px solid var(--blue);
+    color: var(--blue);
+
+}
+
+.key.white:hover{
   background: var(--red);
 }
 
-.piano__negra{
-    background-color: #000000;
-    height: 80px;
-    width: 40px;
-    border: 3 solid #000000;
+.key.black{
+    background: black;
+    width: 2em;
+    height: 3.5em;
+    grid-area: black-key;
     position: absolute;
     border-radius: 0 0 10px 10px;
+    color: var(--white);
+
+
 }
 
-.piano__negra:hover{
+.key.black:hover{
   background: var(--red);
 }
 
-.reb{
-    left:1.3rem
+.key.active {
+    background-color: var(--red);
+    outline: 3px solid var(--blue);
+
 }
 
-.mib{
-    left: 3.8rem;
+.c {
+    left: 2em;
 }
 
-.solb{
-    left: 8.7rem;
+.d {
+    left: 5em;
+
 }
 
-.lab{
-    left: 11.3rem;
+.f {
+    left: 11em;
 }
 
-.sib{
-    left: 13.8rem;
+.g {
+    left: 14em
 }
 
-
+.a {
+    left: 17em;
+}
