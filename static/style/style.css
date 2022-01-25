@@ -199,6 +199,14 @@ h1 span {
         .main__para {
             font-size: 1.8rem;
         }
+        h1 span {
+            position: absolute;
+            right: 32px;
+            width: 0;
+            background: var(--blue);
+            font-size: 72px;
+            animation: maquina 3s alternate steps(12);
+        }
     }
 
 
@@ -239,4 +247,6 @@ h1 span {
             width: 71px;
             height: 80%;
         }
+
+
     }
