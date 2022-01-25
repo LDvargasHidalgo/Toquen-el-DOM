@@ -66,16 +66,39 @@
         font-size: 3em;
     }
 
-
     .menu {
         display: grid;
-        width: 50%;
-        grid-gap: 0px;
-    }
+        width: 78%;
+        border: 3px solid greenyellow;
+        }
 
     .menu>svg {
         border: 8px solid var(--yellow);
         width: 15em;
         height: 9em;
+        justify-items: center;
+
+    }
+}
+
+@media screen and (min-width: 1133px) {
+    .container__main--logo {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        border: 3px solid var(--yellow);
+    }
+    .sub__title{
+        font-size: 80px;
+    }
+
+    .menu {
+        width: 85%;
+    }
+
+    .menu>svg {
+        border: 8px solid var(--yellow);
+        width: 85%;
+        height: 12em;
     }
 }
