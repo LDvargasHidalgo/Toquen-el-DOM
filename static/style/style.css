@@ -41,7 +41,7 @@ body {
 
 h1 {
     float: left;
-    color: #F8C43A;
+    color: var(--yellow);
     position: relative;
     font-size: 4em;
     font-family: var(--montserrat);

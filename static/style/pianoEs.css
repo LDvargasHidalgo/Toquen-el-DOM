@@ -14,26 +14,69 @@
 body{
     display: flex;
     height: 100vh;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background: var(--blue)
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 71px;
+    height: 100vh;
+    width: 80%;
+    grid-template-areas: "container__main"
+                            "main__title"
+                            "piano"
+                            ".";
+}
+
+.container__main{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 1rem;
+    grid-area: container__main;
+}
+
+.main__logo {
+    font-size: 5rem;
+}
+
+.main__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: 4rem;
+    font-family: var(--montserrat);
+    color: var(--red);
+    text-align: center;
+    grid-area: main__title;
+
+}
+
 
 .piano {
-   display: grid;
-   grid-template-columns: 1fr;
-
+   display: flex;
+   flex-direction: column;
    width: max-content;
    gap: 3px;
+   max-height: max-content;
+   margin: auto;
+   grid-area: piano;
+
 }
 
 .octave {
     display: flex;
-    font-size: 1.5rem;
-    border-radius: 15px;
+    font-size: 3.5vw;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .key {
@@ -49,7 +92,7 @@ body{
     height: 6em;
     background: var(--white);
     grid-area: white-key;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 5px 5px;
     outline: 3px solid var(--blue);
     color: var(--blue);
 
@@ -65,7 +108,7 @@ body{
     height: 3.5em;
     grid-area: black-key;
     position: absolute;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
     color: var(--white);
 
 
@@ -100,4 +143,36 @@ body{
 
 .a {
     left: 17em;
+}
+
+
+/* ---------------------Medias---------------------*/
+
+@media screen and (min-width: 744px) {
+    .octave {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1133px) {
+    
+    .container {
+        display: grid;
+        grid-template-columns: 71px 1fr;
+        grid-template-rows: auto auto auto;
+        height: 90vh;
+        width: 90%;
+        grid-template-areas: ". container__main"
+                            ". main__title"
+                            ". piano";
+    }
+
+    .container__main{
+        align-items: flex-end;
+
+    }
+
+    .octave {
+        font-size: 2.5vw;
+    }
 }
