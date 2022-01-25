@@ -28,15 +28,15 @@ const keyRel = {
     b4: "m",
 }
 
-const loadSound = function (fuente) {
+const loadSound = function (src) {
     const sound = document.createElement("audio");
-    sound.src = fuente;
+    sound.src = src;
     sound.setAttribute("preload", "auto");
     sound.setAttribute("controls", "none");
     sound.style.display = "none"; // <-- oculto
     document.body.appendChild(sound);
-    return sound;
-};
+    return sound
+}
 
 keys.forEach(key => {
     let sound = loadSound(`./static/audio/${key.id}.ogg`)
