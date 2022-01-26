@@ -92,7 +92,7 @@
   }
   
   .note.active{
-    background-color: #aaa;
+    box-shadow: 5px 3px 15px 8px #4A78FF ;
   }
   
   

@@ -20,7 +20,7 @@ const reproducirNota = audio =>{
         const tecla = document.querySelector(idTecla); /*  */
         reproducirNota(nota);
         tecla.classList.add("active");
-        setTimeout(()=>tecla.classList.remove("active"), 100);
+        setTimeout(()=>tecla.classList.remove("active"), 200);
     };
 
     /* Crear array de teclas */
