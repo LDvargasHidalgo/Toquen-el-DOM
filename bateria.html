@@ -6,56 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/style/normalize.css">
-    <!-- source sans pro -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-    <!--Monserrat  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <!-- Style css -->
+
     <link rel="stylesheet" href="./static/style/style.css">
-    <title>Toquen el DOM</title>
+    <link rel="stylesheet" href="./static/style/piano.css">
+    <title>Bateria</title>
 </head>
 
 <body>
-    <main class="main">
-        <h1 class="main__title">T E D<span>&#160;</span></h1>
-        <picture class="main__icon">
-
-            <img src="./static/img/logo.svg" alt="" class="main__img">
-        </picture>
-
-        <p class="main__para">"Toquen el DOM" es un sitio en el que puedes tocar instrumentos diseñados y programados en
-            HTML,
-            CSS y Javascript, puedes probar tu habilidad de tocar la batería, el piano y la marimba, o reproducir
-            algunas canciones populares guardadas en nuestro repertorio.</p>
-        <div class="main__buttons">
-            <a class="main__button ghost" href="./about.html">Cómo usar</a>
-            <a class="main__button" href="./menu.html">EMPEZAR</a>
-        </div>
-    </main>
+    <picture class="bateria">
+        <img src="./static/img/construction/60028.jpg" width="320px" height="auto" alt="">
+    </picture>
     <nav class="nav">
         <div class="nav__items">
-            <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="nav__item active"
-                    d="M48.9631 23.1227L27.6529 1.92405L26.2244 0.502385C25.899 0.180599 25.4589 0 25.0001 0C24.5413 0 24.1012 0.180599 23.7757 0.502385L1.03706 23.1227C0.703573 23.4533 0.44001 23.8471 0.261931 24.2808C0.0838524 24.7144 -0.00513249 25.1792 0.000228598 25.6477C0.0222889 27.5798 1.63821 29.1222 3.57952 29.1222H5.92343V47H44.0768V29.1222H46.4703C47.4134 29.1222 48.3013 28.7544 48.9686 28.0903C49.2972 27.7643 49.5576 27.3767 49.7346 26.9498C49.9116 26.523 50.0018 26.0655 50 25.6037C50 24.6706 49.6305 23.7869 48.9631 23.1227ZM28.0885 43.0479H21.9117V31.8503H28.0885V43.0479ZM40.1059 25.1701V43.0479H31.6182V30.5329C31.6182 29.3198 30.631 28.3373 29.4122 28.3373H20.588C19.3692 28.3373 18.382 29.3198 18.382 30.5329V43.0479H9.89429V25.1701H4.59981L25.0056 4.87715L26.2796 6.14511L45.4059 25.1701H40.1059Z"
-                    fill="#04322E" />
-            </svg>
-            <a href="./piano.html">
-                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="./index.html">
+                <svg width="50" height="47" viewBox="0 0 50 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="nav__item"
-                        d="M41.7778 0H5.22222C2.35 0 0 2.35 0 5.22222V41.7778C0 44.65 2.35 47 5.22222 47H41.7778C44.65 47 47 
+                        d="M48.9631 23.1227L27.6529 1.92405L26.2244 0.502385C25.899 0.180599 25.4589 0 25.0001 0C24.5413 0 24.1012 0.180599 23.7757 0.502385L1.03706 23.1227C0.703573 23.4533 0.44001 23.8471 0.261931 24.2808C0.0838524 24.7144 -0.00513249 25.1792 0.000228598 25.6477C0.0222889 27.5798 1.63821 29.1222 3.57952 29.1222H5.92343V47H44.0768V29.1222H46.4703C47.4134 29.1222 48.3013 28.7544 48.9686 28.0903C49.2972 27.7643 49.5576 27.3767 49.7346 26.9498C49.9116 26.523 50.0018 26.0655 50 25.6037C50 24.6706 49.6305 23.7869 48.9631 23.1227ZM28.0885 43.0479H21.9117V31.8503H28.0885V43.0479ZM40.1059 25.1701V43.0479H31.6182V30.5329C31.6182 29.3198 30.631 28.3373 29.4122 28.3373H20.588C19.3692 28.3373 18.382 29.3198 18.382 30.5329V43.0479H9.89429V25.1701H4.59981L25.0056 4.87715L26.2796 6.14511L45.4059 25.1701H40.1059Z"
+                        fill="#04322E" />
+                </svg>
+            </a>
+            <a href="./piano.html">
+            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="nav__item "
+                    d="M41.7778 0H5.22222C2.35 0 0 2.35 0 5.22222V41.7778C0 44.65 2.35 47 5.22222 47H41.7778C44.65 47 47 
                 44.65 47 41.7778V5.22222C47 2.35 44.65 0 41.7778 0ZM28.7222 30.0278H29.375V41.7778H17.625V30.0278H18.2778C19.7139 
                 30.0278 20.8889 28.8528 20.8889 27.4167V5.22222H26.1111V27.4167C26.1111 28.8528 27.2861 30.0278 28.7222 
                 30.0278ZM5.22222 5.22222H10.4444V27.4167C10.4444 28.8528 11.6194 30.0278 13.0556 30.0278H13.7083V41.7778H5.22222V5.22222ZM41.7778 
                 41.7778H33.2917V30.0278H33.9444C35.3806 30.0278 36.5556 28.8528 36.5556 27.4167V5.22222H41.7778V41.7778Z" fill="#04322E" />
-                </svg>
-            </a>
-            <a href="./bateria.html">
-                <svg width="50" height="47" viewBox="0 0 93 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="nav__item" d="M89.7376 0L46.9238 20.3986C45.6363 19.5301 44.1211 19.0649 42.57 19.062C40.5172 19.062 
+            </svg>
+        </a>
+            <svg width="50" height="47" viewBox="0 0 93 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="nav__item active" d="M89.7376 0L46.9238 20.3986C45.6363 19.5301 44.1211 19.0649 42.57 19.062C40.5172 19.062 
                     38.5485 19.8807 37.097 21.338C35.6455 22.7954 34.83 24.7719 34.83 26.8329C34.83 28.8939 35.6455 30.8704 
                     37.097 32.3277C38.5485 33.7851 40.5172 34.6038 42.57 34.6038C46.6335 34.6038 50.0082 31.4449 50.31 
                     27.439L73.7738 16.2684C80.7979 19.2446 85.14 23.1301 85.14 26.8329C85.14 34.1647 68.588 42.3747 46.44 
@@ -71,8 +52,7 @@
                     77.9498V47.2315C75.9333 45.483 81.2081 43.043 85.14 40.0667ZM30.96 48.9294C36.078 49.7608 41.2555 50.1675 
                     46.44 50.1456C51.6245 50.1675 56.802 49.7608 61.92 48.9294L61.92 79.7721C57.1599 80.6657 51.9432 81.2291 
                     46.44 81.2291C40.9369 81.2291 35.7201 80.6657 30.96 79.7721L30.96 48.9294Z" fill="#04322E" />
-                </svg>
-            </a>
+            </svg>
             <svg width="50" height="47" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="nav__item" d="M8.5 2.68688C9.154 1.99788 10.282 1.80088 11.612 1.93488C12.846 2.05888 14.115 2.45788 
                         15 2.82788V12.7509C14.082 12.4009 12.893 12.0589 11.713 11.9409C10.619 11.8299 9.435 11.9019 8.5 
@@ -90,8 +70,6 @@
             </svg>
         </div>
     </nav>
-    <script src="./static/js/funtion.js"></script>
-
 </body>
 
 </html>
