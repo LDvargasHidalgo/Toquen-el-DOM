@@ -28,9 +28,6 @@
     border-radius: 20px;
     cursor: pointer;
   }
-  .note:hover{
-    box-shadow:5px 5px var(--red) ;
-  }
   
   .note:nth-child(1) {
       background: #02B65E;
@@ -94,7 +91,7 @@
     align-items: center;
   }
   
-  .active{
+  .note.active{
     background-color: #aaa;
   }
   
