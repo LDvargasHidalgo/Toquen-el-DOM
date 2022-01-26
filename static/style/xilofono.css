@@ -1,66 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
+.main__logo {
+  font-size: 5rem;
 }
 
-html {
-    height: 100%;
+.main__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: 4rem;
+  font-family: var(--montserrat);
+  color: var(--red);
+  text-align: center;
+  grid-area: main__title;
 }
 
-body {
-    min-height: 100%;
-}
-
-.container {
-    background-color: rgb(228, 207, 247);
-    display: grid;
-    grid-gap: 0.5em;
-    grid-template-areas: "main"
-        "subtittle"
-        "xilofono"
-        "nav";
-    grid-template-rows: 1fr 0.5fr 5fr 1fr;
-}
-
-.main {
-    background-color: rgb(255, 94, 0);
-    grid-area: main;
-    font-size: 50px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    padding-right: 0.7em;
-}
-
-.subtittle {
-    background-color: greenyellow;
-    grid-area: subtittle;
-    text-align: center;
-    font-size: 2em;
-}
-
-.xilofono {
-    background-color: blue;
-    grid-area: xilofono;
-}
-
-.nav {
-    background-color: blueviolet;
-    grid-area: nav;
-}
-
-.nav__items {
+#contenedor {
+    width: 560px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    height: 300px;
     justify-content: space-between;
-    width: 70%;
-    margin: 1.25rem auto;
-    align-items: center;
-
-}
-
-.nav__items>svg {
+  }
+  
+  .note {
+    width: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .note:hover{
+    box-shadow:5px 5px var(--red) ;
+  }
+  
+  .note:nth-child(1) {
+      background: #02B65E;
+      height: 300px;
+  }
+  
+  .note:nth-child(2) {
+      background: #F0D20E;
+      height: 280px;
+  }
+  
+  .note:nth-child(3) {
+      background: #D04559;
+      height: 260px;
+  }
+  
+  .note:nth-child(4) {
+      background: #E28C12;
+      height: 240px;
+  }
+  
+  .note:nth-child(5) {
+      background: #8E83C8;
+      height: 220px;
+  }
+  
+  .note:nth-child(6) {
+      background: #0285D4;
+      height: 200px;
+  }
+  
+  .note:nth-child(7) {
+      background: #FDC1C0;
+      height: 180px;
+  }
+  
+  .note:nth-child(8) {
+      background: #BE3C22;
+      height: 160px;
+  }
+  
+  .boton {
+    margin: 20px auto;
+    width: 560px;
+    height: 50px;
+    background: #333;
+    cursor: pointer;
+  }
+  
+  .white_bold {
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+  .center {
     display: flex;
-    padding: 0.5rem 1rem;    
-    border-radius: 15px;
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .active{
+    background-color: #aaa;
+  }
+  
+  
