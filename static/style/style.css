@@ -164,13 +164,17 @@ h1 span {
     fill: var(--cyan);
 }
 
+.nav__xilo {
+    max-height: 49px;
+}
+
 .nav__xilo.active path, .nav__xilo.active rect,
 .nav__xilo.active circle, .nav__xilo.active polygon{
     fill: var(--cyan)
 }
 
-.nav__xilo.menu path, .nav__xilo.menu rect,
-.nav__xilo.menu circle, .nav__xilo.menu polygon{
+.nav__xilo-menu path, .nav__xilo-menu rect,
+.nav__xilo-menu circle, .nav__xilo-menu polygon{
     fill: var(--yellow)
 }
 
