@@ -7,13 +7,17 @@ const LA = new Audio("static/audio/xilofono-sounds/LA.mp3");
 const SI = new Audio("static/audio/xilofono-sounds/SI.mp3");
 const DOM = new Audio("static/audio/xilofono-sounds/DOM.mp3");
 
+
+/* Función */
 const reproducirNota = audio =>{
-    const clone =audio.cloneNode();
-    clone.play();
-    setTimeout(()=>(clone.volume = 0), 1000);/* la nota se reproduce por 2000ms */
+    const clone =audio.cloneNode(); /* Almacenar en una constante un clon de las notas */
+    clone.play(); /* reproducir el clone */
+    setTimeout(()=>(clone.volume = 0), 2000);/* la nota se reproduce por 2000ms*/
 };
-    const tocarTecla = (idTecla, nota) => {
-        const tecla = document.querySelector(idTecla);
+
+/* invoca en el momento que accciona la tecla */
+    const tocarTecla = (idTecla, nota) => { /* traigo la clase de la tecla, y la nota que son las que definimos en el inicio */
+        const tecla = document.querySelector(idTecla); /*  */
         reproducirNota(nota);
         tecla.classList.add("active");
         setTimeout(()=>tecla.classList.remove("active"), 100);
@@ -25,10 +29,10 @@ const teclas = [
     {id : ".RE", nota: RE, key: 83},
     {id : ".MI", nota: MI, key: 68},
     {id : ".FA", nota: FA, key: 70},
-    {id : ".SOL", nota: SOL, key: 50},
-    {id : ".LA", nota: LA, key: 76},
-    {id : ".SI", nota: SI, key: 75},
-    {id : ".DOM", nota: DOM, key: 74}
+    {id : ".SOL", nota: SOL, key: 71},
+    {id : ".LA", nota: LA, key: 72},
+    {id : ".SI", nota: SI, key: 74},
+    {id : ".DOM", nota: DOM, key: 75}
 ];
 teclas.forEach(({ id, nota }) => {
     const tecla = document.querySelector(id);
@@ -42,6 +46,6 @@ teclas.forEach(({ id, nota }) => {
       tocarTecla(id, nota);
     }
   });
-  
+
 
 
