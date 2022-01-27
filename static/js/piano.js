@@ -1,5 +1,6 @@
 let keys = document.querySelectorAll(".key")
-let body = document.body
+
+console.log(keys)
 
 const keyRel = {
     c3: "q",
@@ -38,11 +39,12 @@ const loadSound = function (src) {
         return sound
 }
 
+
 keys.forEach(key => {
     let sound = loadSound(`./static/audio/${key.id}.ogg`)
+    /*------------Eventos del mouse--------------*/
     key.addEventListener("mousedown", ()=>{
         sound.play()
-        console.log(key.id)
 
     })
     key.addEventListener("mouseup", ()=>{
@@ -50,8 +52,9 @@ keys.forEach(key => {
         sound.load()
 
     })
+    /*------------Eventos del teclado--------------*/
 
-    body.addEventListener("keydown", (e)=> {
+    window.addEventListener("keydown", (e)=> {
         if(e.key === keyRel[key.id]) {
             sound.play()
             key.classList[key.classList.length-1] !== "active" && key.classList.toggle("active")
@@ -59,7 +62,7 @@ keys.forEach(key => {
 
     })
 
-    body.addEventListener("keyup", (e)=> {
+    window.addEventListener("keyup", (e)=> {
         if(e.key === keyRel[key.id]) {
             sound.pause()
             sound.load()
