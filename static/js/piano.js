@@ -55,7 +55,7 @@ keys.forEach(key => {
     /*------------Eventos del teclado--------------*/
 
     window.addEventListener("keydown", (e)=> {
-        if(e.key === keyRel[key.id]) {
+        if(e.key.toLocaleLowerCase() === keyRel[key.id]) {
             sound.play()
             key.classList[key.classList.length-1] !== "active" && key.classList.toggle("active")
         }
@@ -63,7 +63,7 @@ keys.forEach(key => {
     })
 
     window.addEventListener("keyup", (e)=> {
-        if(e.key === keyRel[key.id]) {
+        if(e.key.toLocaleLowerCase() === keyRel[key.id]) {
             sound.pause()
             sound.load()
             key.classList.toggle("active")
